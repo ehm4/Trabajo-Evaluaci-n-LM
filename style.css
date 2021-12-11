@@ -1,0 +1,222 @@
+/****Estilo de la página sobre dioses egipcios*/
+@font-face {
+  font-family: letra;
+  src: url(../fonts/Tangerine-Regular.ttf);
+}
+html {scroll-behavior: smooth;}
+body {
+  background-color: rgb(211, 113, 61);
+  margin: 0;
+  padding: 0;
+}
+nav{position: sticky;
+  top:0;
+  z-index:99;}
+  
+.topnav {
+  overflow: hidden;
+  background-color: rgb(51, 25, 11);
+  }
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;}
+
+.topnav a:hover {
+  background-color: rgb(211, 113, 61);
+  color: black;}
+
+.topnav a.active {
+  background-color: rgb(51, 25, 11);
+  color: white;}
+
+.topnav .icon {
+  display: none;}
+
+#container{
+  width:90%; 
+  margin: auto;
+  background-color: rgb(51, 25, 11);
+}
+#hero{
+  background-image: url(../images/pirámides.jpg);
+  background-size: cover;
+  background-position: 80%;
+  height:95vh /*100vh sería el alto del dispositivo móvil, tablet o pc*/;
+  position:relative;
+}
+#hero h1{
+  position: absolute;
+  top:10px;
+  left:20px;
+  font-family: letra;
+  font-size:2.5em;
+  color:white;
+}
+#calltoaction{
+  font-family: letra;
+  font-size:1.5em;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 80%;
+  padding:8px;/*Para que parezca un boton*/
+  background-color: rgb(51, 25, 11, 0.7);
+  border-radius:15px;
+  color: white;
+}
+#calltoaction:hover{
+  background-color: rgb(211, 113, 61, 0.3);
+  cursor:pointer;
+}
+#Introducción{
+  padding: 5%;
+  font-family: letra;
+  font-size:2em;
+  background-color: rgb(51, 25, 11);
+  color: white;
+  text-align: justify;
+}
+#Introducción h1{
+  text-align:center
+}
+#jeroglifico{
+  width: 50%;
+  float: left;/*nuevo para que la imagen quede rodeada por texto*/
+  margin:10px
+}
+#history p::first-letter{
+  font-size: 2em;
+  color: rgb(211, 113, 61);
+}
+#galeria {
+  padding-bottom: 9vh;
+  color: white;
+  background-color: rgb(51, 25, 11);
+}
+#galeria h2{
+  text-align: center;
+  font-family: letra;
+  font-size:2.5em;
+}
+.paragraph {
+  padding-bottom: 1%;
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+.img-around-text {
+  width: 50%; /*Para que ocupe menos espacio*/
+  margin-right: 50px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+}
+
+.slider {
+  overflow-x: scroll;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  height: 300px;
+}
+#dioses{font-family:letra;
+  color: rgb(255, 255, 255);
+  padding:5%;
+  }
+          
+#dioses h1{text-align: center;
+  color:white;
+  font-size: 2.5em;
+  font-family: letra;}
+
+#text{text-align: center;}
+
+.panel{padding-top: 10px;}
+.accordion {
+  background-color: rgb(51, 25, 11);
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size:2em;
+  font-family: letra;}
+
+.active, .accordion:hover {
+  background-color: rgb(211, 113, 61)}
+
+.panel {
+  padding: 0 18px;
+  background-color: rgb(51, 25, 11);
+  display: none;
+  overflow: hidden;
+  font-size:1.5em;
+  font-family: letra;}
+
+h1, p{
+  color:white;
+}
+#footer a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  margin: 7px 0;
+}
+
+#columnas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 75px;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+.columna {
+  padding: 5%;
+  color: rgb(250, 250, 250);
+}
+
+.columna p {
+  margin: 2px;
+  margin-left: 0;
+}
+
+#footer a:hover {
+  color: rgb(211, 113, 61);
+}
+
+/********************mEDIA QUERIES**************/
+@media only screen and (max-width:700px){
+  #jeroglifico{width:100%;}
+  #gallery{
+    padding: 0;
+    background-color: rgb(211, 113, 61);
+  }
+
+  .slider {
+    width: 87%;
+    margin: auto;
+    height: fit-content;
+    gap: 0px;
+  }
+  
+  .slider img {
+    flex: 0 0 100%;
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 950px) {
+  #columnas {
+    display: block;
+  }
+
+}

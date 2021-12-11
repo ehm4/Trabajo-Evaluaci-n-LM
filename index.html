@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gods of Egypt</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--enlace con la hoja de estilos-->
+  <link rel="stylesheet" href="style/style.css">
+  <!--enlace con el favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <!--enlace con javascript-->
+  <script src="javascript/javascript.js"></script>
+</head>
+<body>
+  <div id="container">
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="#hero" class="active">Home</a>
+            <a href="#Introducción">Mitología egipcia</a>
+            <a href="#galeria">Galería</a>
+            <a href="#dioses">Dioses</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </div>
+  <section id="hero"><!--Aquí ira la imagen grande de fondo y la presentación del sitio-->
+  <h1>
+    Gods of Egypt
+  </h1>
+  <a href="#Introducción" id="calltoaction">Infórmate</a>
+</section>
+  <section id="Introducción">
+    <!--Esta sección tiene texto y una imagen a la izquierda responsive-->
+    <h1><i class="fa fa-sort-asc " aria-hidden="true"></i>Historia</h1>
+    <img id="jeroglifico" src="images/jeroglifico.jpg" alt="jeroglifico egipcio">
+    <p>La mitología egipcia comprende el estudio de creencias sustentadas en la religión del Antiguo Egipto desde la época predinástica hasta la imposición del cristianismo, cuando sus prácticas fueron prohibidas en tiempos de Justiniano I, en el año 535.</p>
+    <p>Su desarrollo e influencia perduraron más de tres mil años, variando lógicamente a través del tiempo; por lo tanto, un artículo o incluso un libro, solo puede resumir la multitud de entidades y temas de este sistema complejo de creencias. La variada iconografía egipcia es muy diferente de la griega o romana: en la mitología egipcia muchas deidades son representadas con cuerpo humano, y cabezas de otros animales.</p>
+  </section>
+  <section id="galeria" class="section">
+    <h2><i class="fa fa-picture-o" aria-hidden="true"></i> Galería</h2>
+    <div class="slider">
+      <img src="images/galeria1.jpg" alt="Anubis">
+      <img src="images/galeria2.jpg" alt="Ra">
+      <img src="images/galeria3.jpg" alt="Horus">
+      <img src="images/galeria4.jpg" alt="Sobek">
+      <img src="images/galeria5.jpg" >
+    </div>
+  </section>
+  <section id="dioses">
+    <h1><i class="fa fa-eye " aria-hidden="true"></i>Dioses</h1>
+    
+    <!--snippet acordion para añadir contenido que se muestre a voluntad desplegándose-->
+    <button class="accordion">Ra</button>
+    <div class="panel">
+      <img src="images/ra.png" alt="">
+        <p>Ra es el dios del Sol y del origen de la vida en la mitología egipcia. Ra es el símbolo de la luz solar, creador de vida,1​ y responsable del ciclo de la muerte y la resurrección.</p>
+    </div>
+
+    <button class="accordion">Anubis</button>
+    <div class="panel">
+      <img src="images/anubis.png" alt="">
+        <p>Anubis es el guardián de las tumbas asociado con la muerte y la vida después de ésta en la religión del Antiguo Egipto, maestro de las necrópolis y patrón de los embalsamadores, representado como un gran cánido negro acostado sobre su estómago, probablemente un chacal o un gato salvaje, o como un hombre con cabeza de perro.</p>
+    </div>
+
+    <button class="accordion">Horus</button>
+    <div class="panel">
+      <img src="images/horus.png" alt="">
+        <p>Horus ("el elevado", "el distante") era el dios celeste en la mitología egipcia. Se le consideraba como el iniciador de la civilización egipcia. Era el dios de la realeza en el cielo, de la guerra y de la caza</p>
+    </div>
+
+    <button class="accordion">Isis</button>
+    <div class="panel">
+      <img src="images/isis.png" alt="">
+        <p>La diosa Isis es una diosa egipcia, hermana y esposa de Osiris. Representa la madre, la reina y la diosa de todos los dioses.</p>
+    </div>
+
+    <button class="accordion">Seth</button>
+    <div class="panel">
+        <img src="images/seth.png" alt="">
+        <p>Seth o Set es un dios ctónico, deidad de la fuerza bruta de lo tumultuoso, lo incontenible. Señor del caos, dios de la sequía y del desierto en la mitología egipcia.</p>
+    </div>
+
+    <button class="accordion">Sobek</button>
+    <div class="panel">
+      <img src="images/sobek.png" alt="">
+        <p>Sobek o Renekton fue el dios cocodrilo, de carácter benéfico, creador del Nilo que habría surgido de su sudor; dios de la fertilidad, la vegetación y la vida en la mitología egipcia. Está relacionado con el punto cardinal Norte.</p>
+    </div>
+
+    <button class="accordion">Bastet</button>
+    <div class="panel">
+      <img src="images/bastet.png" alt="">
+        <p>Bastet o Bast es una diosa del antiguo Egipto, adorada desde la Segunda Dinastía (2890 a. C.). Representa la protección, el amor y la armonía. Protectora de los hogares y templos. Fue la diosa de la guerra en el Bajo Egipto, región del Delta del Nilo, antes de la unificación de las culturas del antiguo Egipto.</p>
+    </div>
+
+    <button class="accordion">Osiris</button>
+    <div class="panel">
+      <img src="images/osiris.png" alt="">
+        <p>Osiris es un dios y rey mítico del Antiguo Egipto. Según la mitología egipcia fue el inventor de la agricultura y la religión y su reinado fue beneficioso y civilizador.</p>
+        
+    </div>
+</section>
+<footer id=footer class="section">
+  <div id=columnas>
+    <div class="columna">
+      <h3>SOBRE MI</h3>
+      <a href="https://github.com/ehm4"><i class="fa fa-github" aria-hidden="true"></i> Ernesto Hernández Mangas</a>
+      <br>
+      <a href="mailto:ernesto.hernandez.fp@iescampanillas.com">ernesto.hernandez.fp@iescampanillas.com</a>
+    </div>
+    <div class="columna">
+      <h3>SOBRE EL INSTITUTO</h3>
+      <a href="https://fp.iescampanillas.com/"><i class="fa fa-internet-explorer" aria-hidden="true"></i> Web</a>
+      <br>
+      <a href="https://github.com/IESCampanillas/indice-fp-ies-campanillas"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+      <br>
+      <a href="https://twitter.com/fpiescampa"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+    </div>
+  </div>
+</footer>
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+      /* Toggle between adding and removing the "active" class,
+      to highlight the button that controls the panel */
+      this.classList.toggle("active");
+
+      /* Toggle between hiding and showing the active panel */
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+      panel.style.display = "none";
+      } else {
+      panel.style.display = "block";
+      }
+  });
+  }</script>
+  </div>
+</body>
+</html>
